@@ -17,7 +17,8 @@ RUN export DEBIAN_FRONTEND noninteractive && \
 	xz-utils \
 	gnupg2 \
 	software-properties-common \
-	xvfb && \
+	xvfb \
+	net-data && \ 
     curl -s https://download.opensuse.org/repositories/Emulators:/Wine:/Debian/xUbuntu_18.04/Release.key | apt-key add - && \
     apt-add-repository 'deb https://download.opensuse.org/repositories/Emulators:/Wine:/Debian/xUbuntu_18.04/ ./' && \
     apt update && \
